@@ -20,7 +20,7 @@ public class TestController {
         return ResponseEntity.ok("Name: " + name);
     }
 
-    @GetMapping("/dog/{age}")
+    @GetMapping("/dog/age/{age}")
     public ResponseEntity<?> dogAge(@PathVariable String age) {
         LOG.info("Test Controller - age: {}", age);
 
